@@ -233,6 +233,39 @@ section#posts {
   color: black;
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info .phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-info .email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-info button {
+  background-color: salmon;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: fit-content;
+}
+.contact-info button:hover {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+
 .contact-info p {
   margin: 15px 0;
   font-size: 1.1rem;

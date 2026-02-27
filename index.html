@@ -151,14 +151,24 @@
         <span class="close" onclick="closeContactModal()">&times;</span>
         <h2>Contact Me</h2>
         <div class="contact-info">
-          <p>
-            <strong>Celular:</strong>
-            <a href="tel:+5541987263552">+55 (41) 98726-3552</a>
-          </p>
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:guilhergpc@gmail.com">guilhergpc@gmail.com</a>
-          </p>
+          <div class="phone">
+            <p>
+              <strong>Celular:</strong>
+              <a id="phone-number" href="tel:+5541987263552"
+                >+55 (41) 98726-3552</a
+              >
+            </p>
+            <button onclick="copyToClipboard('phone-number')">Copy</button>
+          </div>
+          <div class="email">
+            <p>
+              <strong>Email:</strong>
+              <a id="email-address" href="mailto:guilhergpc@gmail.com"
+                >guilhergpc@gmail.com</a
+              >
+            </p>
+            <button onclick="copyToClipboard('email-address')">Copy</button>
+          </div>
         </div>
       </div>
     </div>
@@ -171,6 +181,11 @@
 
       function closeContactModal() {
         document.getElementById("contactModal").style.display = "none";
+      }
+
+      function copyToClipboard(id) {
+        var text = document.getElementById(id).innerHTML;
+        navigator.clipboard.writeText(text);
       }
 
       window.onclick = function (event) {
