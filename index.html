@@ -22,13 +22,7 @@
 
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#">Works</a>
-          </li>
-          <li class="nav-item">
-            <a href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="#">Contact</a>
+            <a href="#" onclick="openContactModal(event)">Contact</a>
           </li>
         </ul>
 
@@ -152,7 +146,40 @@
         </div>
       </section>
     </main>
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeContactModal()">&times;</span>
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+          <p>
+            <strong>Celular:</strong>
+            <a href="tel:+5541987263552">+55 (41) 98726-3552</a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:guilhergpc@gmail.com">guilhergpc@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <script>
+      function openContactModal(event) {
+        event.preventDefault();
+        document.getElementById("contactModal").style.display = "block";
+      }
+
+      function closeContactModal() {
+        document.getElementById("contactModal").style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        const modal = document.getElementById("contactModal");
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
     <footer></footer>
   </body>
 </html>
