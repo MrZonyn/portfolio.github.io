@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Portfolio de Guilherme Pires Cardozo" />
+    <meta name="description" content="Portfólio  de Guilherme Pires Cardozo" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
@@ -18,11 +18,20 @@
   <body>
     <header>
       <nav id="navbar">
-        <a class="nav-brand">Guilherme Pires Cardozo</a>
+        <a class="nav-brand">Portfólio - Guilherme Pires Cardozo</a>
 
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#" onclick="openContactModal(event)">Contact</a>
+            <a href="#banner">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#resumo-pro">Experiência</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projetos">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" onclick="openContactModal(event)">Contato</a>
           </li>
         </ul>
         </div>
@@ -72,7 +81,7 @@
         />
       </section>
 
-      <section id="posts">
+      <section id="resumo-pro">
         <div class="posts-content">
           <div class="posts-content-header">
             <h2 class="section-title">Resumo Profissional</h2>
@@ -87,7 +96,10 @@
               <p>
                 <strong>Manutenção</strong> e <strong>configuração</strong> de
                 CPUs, placas de microprocessamento (<i>Raspberry</i> e
-                <i>Orange</i>) e aparelhos android TV Box; Cooperação direta com
+                <i>Orange</i>) e aparelhos android TV Box.
+              </p>
+              <p>
+                  Cooperação direta com
                 a equipe de <strong>suporte técnico</strong> e
                 <strong>logística</strong>, organizando e auxiliando no envio de
                 equipamentos.
@@ -102,11 +114,14 @@
               <p>
                 Atuei como professor de
                 <b>manutenção</b> e <b>montagem de computadores desktop</b>,
-                apresentando conteúdo teórico e prático. Também como professor
+                apresentando conteúdo teórico e prático.
+              </p>
+              <p>
+                Também como professor
                 de <strong>informática básica</strong>, apresentando
-                <b>Pacote Office</b>; Boas práticas no sistema operacional
-                <b>Windows</b> com dicas para melhor desempenho e utilidades
-                gerais;
+                <b>Pacote Office</b> e boas práticas no sistema operacional
+                <b>Windows</b>, com dicas para melhor desempenho e utilidades
+                gerais.
               </p>
             </div>
             <div class="post-card">
@@ -118,12 +133,16 @@
               <p>
                 <strong>Identificação e análise de problemas</strong> em
                 aplicações web obtendo as melhores soluções utilizando
-                <b>Angular</b>;
-                <strong>Mapeamento do design do sistema</strong> e auxílio na
-                implementação de features utilizando <b>Svelte</b>; Colaboração
+                <b>Angular</b>, <strong>mapeamento do design do sistema</strong> e auxílio na
+                implementação de features utilizando <b>Svelte</b>.
+              </p>
+              <p>
+                Colaboração
                 com diversos departamentos da instituição no planejamento e na
                 implementação de novos <b>planos de melhoria e mudanças</b> em
-                aplicações web;
+                aplicações web.
+              </p>
+              <p>
                 <strong>Criação de documentos e planilhas</strong> utilizando
                 Microsoft Word e Excel para auxiliar na produção de comunicações
                 e relatórios técnicos gerenciais.
@@ -132,7 +151,66 @@
           </div>
         </div>
       </section>
+
+      <section id="projetos">
+        <div class="posts-content">
+          <div class="posts-content-header">
+            <h2 class="section-title">Projetos Relevantes</h2>
+          </div>
+          <div class="posts-cards">
+            <div class="post-card">
+              <h3>
+                Carrinho Seguidor de Linha
+              </h3>
+              <span><a target="_blank" href="imgs_files/artigoBigaZord.pdf">Artigo</a> - Nov/2024</span>
+              <p>
+                <strong>Robô autônomo</strong> capaz de seguir uma linha preta no chão sem intervenção humana, desenvolvido em equipe como projeto de robótica na faculdade.
+              </p>
+              <p>
+                <li><b>Arduino</b> (microcontrolador);</li>
+                <li><b>2 sensores</b> infravermelhos (IR);</li>
+                <li>Driver de motor <b>(ponte H);</b></li>
+                <li><b>2 motores</b> DC;</li>
+                <li>4 pilhas AA <b>(bateria dos motores)</b>;</li>
+                <li>1 bateria maior <b>(alimentação do Arduino)</b>.</li>
+              </p>
+              <p>
+                <img src="imgs_files/carrinho.jpeg" alt="Carinho Montado e Configurado" style="height: 10rem; width: 10rem; margin-left: 4rem;">
+              </p>
+              <p>
+                Os dois <b>sensores IR</b> ficam posicionados na frente do carrinho, <b>um em cada lado</b> da linha. O <b>Arduino</b> lê continuamente <b>os sinais</b> dos sensores:
+              </p>
+              <p>
+                <li><b>Se ambos detectam a linha</b> → segue em frente;</li>
+                <li><b>Se sensor esquerdo sai da linha</b> → curva para a esquerda;</li>
+                <li><b>Se sensor direito sai da linha</b> → curva para a direita.</li>
+              </p>
+            </div>
+            <div class="post-card">
+              <h3>
+                Site Dualine Nail
+              </h3>
+              <span>
+                <a href="https://dualine-nail.vercel.app" target="_blank">Link</a> - Mar/2026
+              </span>
+              <p>
+                Site completo para nail designer com <b>portfólio de trabalhos</b>, <b>tabela de serviços e preços</b>, <b>página "sobre"</b> e sistema de agendamento <b>integrado ao Google Agenda</b> em tempo real.
+              </p>
+              <p>
+                O agendamento lê o calendário da cliente e <b>bloqueia automaticamente</b> os horários ocupados no site, respeitando a duração <b>real</b> de cada evento. Dias sem atendimento (como domingos) são <b>bloqueados por padrão</b>. Ao confirmar, o cliente é redirecionado ao <b>WhatsApp</b> com a mensagem de solicitação já preenchida.
+              </p>
+              <p>
+                <strong>Tecnologias</strong>:<br />
+                <li>HTML, CSS e JavaScript no frontend;</li>
+                <li>Backend serverless em Node.js hospedado no Vercel, integrado à Google Calendar API via Service Account;</li> 
+                <li>Deploy contínuo pelo GitHub.</li>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <div id="contactModal" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeContactModal()">&times;</span>

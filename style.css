@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 button,
 input,
@@ -18,7 +22,11 @@ body {
 
 header {
   background-color: bisque;
-  height: 5rem;
+  height: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 header #navbar {
@@ -29,7 +37,7 @@ header #navbar {
   padding: 0 2rem;
   max-width: 75rem;
   margin: 0 auto;
-  height: 5rem;
+  height: 2rem;
 }
 
 header #navbar .nav-brand {
@@ -87,7 +95,7 @@ main #banner .banner-content .banner-content-subtitle {
   margin-bottom: 3rem;
 }
 
-main #banner .banner-content .banner-content-btn {
+.banner-content-btn {
   background-color: salmon;
   color: white;
   font-size: 20px;
@@ -97,7 +105,7 @@ main #banner .banner-content .banner-content-btn {
   border: none;
   cursor: pointer;
 }
-main #banner .banner-content .banner-content-btn:hover {
+.banner-content-btn:hover {
   background-color: black;
   transition: background-color 0.3s;
 }
@@ -120,7 +128,7 @@ main #banner .banner-image {
 }
 
 /* Section Posts */
-section#posts {
+section#resumo-pro {
   margin-top: 4rem;
   background-color: bisque;
   padding: 0 2rem;
@@ -129,31 +137,31 @@ section#posts {
   border-radius: 10px;
 }
 
-#posts .posts-content {
+.posts-content {
   padding: 0 2rem;
   max-width: 75rem;
   margin: 0 auto;
 }
 
-#posts .posts-content .posts-content-header {
+.posts-content .posts-content-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
 }
 
-#posts .posts-content .posts-content-header .section-title {
+.posts-content .posts-content-header .section-title {
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-#posts .posts-content .posts-cards {
+.posts-content .posts-cards {
   display: flex;
   gap: 2rem;
   margin-bottom: 1.5rem;
 }
 
-#posts .posts-content .posts-cards .post-card {
+.posts-content .posts-cards .post-card {
   background-color: white;
   border-radius: 10px;
   padding: 1rem;
@@ -161,29 +169,51 @@ section#posts {
   margin-bottom: 1.3rem;
 }
 
-#posts .posts-content .posts-cards .post-card h3 {
+h2 {
+  font-size: large;
+  font-weight: 700;
+}
+
+h3 {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-#posts .posts-content .posts-cards .post-card span {
+.posts-content .posts-cards .post-card span {
   font-size: 1.3rem;
   font-weight: 400;
   margin-bottom: 1rem;
   display: block;
 }
 
-#posts .posts-content .posts-cards .post-card p {
+.posts-content .posts-cards .post-card p {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.4rem;
+  padding: 0.5rem;
+}
+li {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  margin-left: 1rem;
 }
 
 @media (max-width: 740px) {
-  #posts .posts-content .posts-cards {
+  .posts-content .posts-cards {
     flex-direction: column;
   }
+}
+
+/* Section Projetos */
+section#projetos {
+  margin-top: 4rem;
+  background-color: rgba(108, 167, 226, 0.585);
+  padding: 0 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 /* Modal */
