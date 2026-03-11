@@ -127,6 +127,18 @@ main #banner .banner-image {
   }
 }
 
+@media (max-width: 830px) {
+  header #navbar .nav-brand {
+    font-size: 1rem;
+  }
+  header #navbar .nav-list {
+    gap: 0.8rem;
+  }
+  header #navbar .nav-list .nav-item a {
+    font-size: 15px;
+  }
+}
+
 /* Section Posts */
 section#resumo-pro {
   margin-top: 4rem;
