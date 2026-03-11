@@ -127,9 +127,9 @@ main #banner .banner-image {
   }
 }
 
-@media (max-width: 830px) {
+@media (max-width: 420px) {
   header #navbar .nav-brand {
-    font-size: 1rem;
+    display: none;
   }
   header #navbar .nav-list {
     gap: 0.8rem;
